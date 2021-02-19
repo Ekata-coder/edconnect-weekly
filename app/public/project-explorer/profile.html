@@ -2,76 +2,158 @@
 
 <html>
 
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
 <body>
 
-<header>
-    <h1>Project Explorer</h1>
 
-    <h2>One Stop Database For Academic Projects</h2>
-</header>
-    `
-<nav>
-    <a href="index.html">Home</a>
-    <a href="search.html">Projects</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <a href="createproject.html">Submit</a>
-</nav>
+ 
+        <nav class="navbar navbar-light bg-primary">
+            <a class="navbar-brand text-light">Project Explorer</a>
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <button class="btn text-light" type="submit">Submit</button>
+                    </form>
+                </li>
+            </ul>
+            <form>
+                <button class="btn text-light" type="submit">Sign up</button>
+                <button class="btn text-light" type="submit">Login</button>
+            </form>
+        </nav>
 
-<main>
-    <form>
-    <section>
-        <h3>John Doe</h3>
-        <div>john.doe@gmail.com</div>
-        <ul>
-            <li>Program: Computer Science</li>
-            <li>Matric: 00/0000</li>
-            <li>Graduation Year: 2019</li>
+
+
+    <main>
+        <div class="container d-flex align-items-baseline flex-wrap mt-5 mx-5">
+            <h3>Ade Chucks</h3>
+            ade@edconnect.ng
+        </div>
+        <div class="row mx-5 bg-light">
+            <div class="col">
+            Program
+            </div>
+            <div class="col">
+            Matriculation number
+            </div>
+            <div class="col">
+            Graduation year
+            </div>
+        </div>
+        <div class="row mx-5 bg-light">
+            <div class="col">
+            Computer Information System
+            </div>
+            <div class="col">
+            33/3333
+            </div>
+            <div class="col">
+            2018
+            </div>
+        </div>
+        <div class="update-profile mt-2 mx-5">
+            <h3>Update Profile</h3>
+            <hr>
+        </div>
+        <div class="update-profile mt-2 mx-auto" style="width: 900px;">
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFirstName">First name</label>
+                    <input type="text" class="form-control" id="inputFirstName">
+                </div>
+                <div class="form-group col-md-6">
+                        <label for="inputLastName">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmailAddress">Email Address</label>
+                    <input type="email" class="form-control" id="inputEmailAddress">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="inputProgram">Program</label>
+                <select id="inputProgram" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+                </select>
+            </div>
+        </div>
+                <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputMatriculationNumber">Matriculation number</label>
+                            <input type="text" class="form-control" id="inputMatriculationNumber">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputGraduationYear">Graduation year</label>
+                            <select id="inputGraduationYear" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                </div>
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                </form>
+        </div>
+
+                <div class="confirm-password mt-2 mx-5">
+                    <h3>Confirm Password</h3>
+                    <hr>
+                </div>
+                
+                <div class="update-profile mt-2 mx-auto" style="width: 900px;">
+                    <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                           <label for="inputPassword">Current Password</label>
+                           <input type="password" class="form-control" id="inputPassword" placeholder="Current password">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPassword">New Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Your new password">
+                         </div>
+                         <div class="form-group col-md-4">
+                            <label for="inputPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Confirm new password">
+                         </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Change Password</button>
+                </form>
+                </div>
+            
+            
+
+        <ul class="nav navbar-light bg-light justify-content-end mt-1 mx-5">
+            <li class="nav-item">
+                <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer © 2020.</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link Edconnect disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+            </li> 
         </ul>
-    </section>
+        
+      
 
-    <section>
-        <h2>Update Profile</h2>
-     <div>First Name: <input type="text" name="firstName" /></div><br>
-    <div>Last Name: <input type="text" name="lastName" /></div><br>
-     <div>Email Address: <input type="email" name="email" /></div><br>
-     <div>Matric Number: <input type="text" name="matricNumber" /></div><br>
-     <div>Program: <select id="program" name="program">
-        <option value="computer_science">Computer Science</option>
-        <option value="computer_information_systems">Computer Information Systems</option>
-        <option value="computer_technology">Computer Technology</option>
-    </select>
-        </div><br>
-    
-    <div>Program: <select id="Graduation Year" name="graduationYear">
-        <option value="2013">2013</option>
-        <option value="2014">2014</option>
-        <option value="2015">2015</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-        <option value="2020">2020</option>
-    </select>
-    </div><br>
-    
-    <input type="submit" value="Submit" />
 
-    </section>
 
-    <section>
-       <h2>Change Password</h2>
-     
-       <div>Current Password: <input type="password" name="currentPassword" /></div><br>
-       <div>New Password: <input type="password" name="newPassword" /></div><br>
-       <div>Confirm Password: <input type="password" name="confirmPassword" /></div><br>
-
-       <input type="submit" value="Submit" />
-       
-    </section>
-
-    </form>
-</main>
+    </main>
 
 
 </body>

@@ -2,62 +2,100 @@
 
 <html>
 
+    <head>
+
+        <meta charset="utf-8">
+    
+        <title>Index</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css"  rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    
+    </head>
+
 <body>
 
-<header>
-    <h1>Project Explorer</h1>
+    <main>
 
-    <h2>One Stop Database For Academic Projects</h2>
-</header>
-    `
-<nav>
-    <a href="index.html">Home</a>
-    <a href="search.html">Projects</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <a href="createproject.html">Submit</a>
-</nav>
+        <nav class="navbar navbar-light bg-primary">
+            <a class="navbar-brand text-light">Project Explorer</a>
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        <button class="btn text-light" type="submit">Submit</button>
+                    </form>
+                </li>
+            </ul>
+            <form>
+                <button class="btn text-light" type="submit">Sign up</button>
+                <button class="btn text-light" type="submit">Login</button>
+            </form>
 
-    <form>
+        </nav>
 
-    <h1>Signup</h1>
-    
-    <div>First Name: <input type="text" name="firstName" /></div><br>
+        <div class="mt-5 mx-auto" style="width: 800px;">
 
-    <div>Last Name: <input type="text" name="lastName" /></div><br>
-  
-    <div>Email Address: <input type="email" name="email" /></div><br>
-    
-    <div>Password: <input type="password" name="password" /></div><br>
-  
-    <div>Matrici Number: <input type="text" name="matricNumber" /></div><br>
-    
+        <h3>Sign up</h3> 
 
-    <div>Program: <select id="program" name="program">
-    <option value="computer_science">Computer Science</option>
-    <option value="computer_information_systems">Computer Information Systems</option>
-    <option value="computer_technology">Computer Technology</option>
-</select>
-    </div><br>
+            <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFirstName">First name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                </div>
+                    <div class="form-group col-md-6">
+                     <label for="inputLastName">Last name</label>
+                     <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                    </div>
+                </div>
+            <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmailAddress">Email Address</label>
+                      <input type="email" class="form-control" id="inputEmailAddress" placeholder="Your Email address">
+                    </div>
+                    <div class="form-group col-md-6">
+                       <label for="inputPassword4">Password</label>
+                       <input type="password" class="form-control" id="inputPassword" placeholder="Your Password">
+                    </div>
+            </div>
+            <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputProgram">Program</label>
+                        <select id="inputProgram" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputMatriculationNumber">Matriculation Number</label>
+                        <input type="text" class="form-control" id="inputMatriculationNumber" placeholder="e.g 16/2020">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputGraduationYear">Graduation Year</label>
+                        <select id="inputGraduationYear" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+            </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+        </div>>
 
-<div>Program: <select id="Graduation Year" name="graduationYear">
-    <option value="2013">2013</option>
-    <option value="2014">2014</option>
-    <option value="2015">2015</option>
-    <option value="2016">2016</option>
-    <option value="2017">2017</option>
-    <option value="2018">2018</option>
-    <option value="2019">2019</option>
-    <option value="2020">2020</option>
-</select>
-</div><br>
-
-<input type="submit" value="Submit" />
-
-</form>
-
-</main>
-
+        <ul class="nav navbar-light bg-light justify-content-end mt-1 mx-5">
+        <li class="nav-item">
+         <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer © 2020.</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link Edconnect disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+        </li> 
+        </ul>
+    </main>
 
 </body>
 

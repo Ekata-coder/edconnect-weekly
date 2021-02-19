@@ -2,33 +2,82 @@
 
 <html>
 
+    <head>
+
+        <meta charset="utf-8">
+    
+        <title>Index</title>
+    
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+    
+    
+     
+            <nav class="navbar navbar-light bg-primary">
+                <a class="navbar-brand text-light">Project Explorer</a>
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        <button class="btn text-light" type="submit">Submit</button>
+                        </form>
+                    </li>
+                </ul>
+                <form>
+                    <button class="btn text-light" type="submit">Sign up</button>
+                    <button class="btn text-light" type="submit">Login</button>
+                </form>
+            </nav>
+    
+
 <body>
 
-<header>
-    <h1>Project Explorer</h1>
-
-    <h2>One Stop Database For Academic Projects</h2>
-</header>
-    `
-<nav>
-    <a href="index.html">Home</a>
-    <a href="search.html">Projects</a>
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-    <a href="createproject.html">Submit</a>
-</nav>
-
 <main>
-<form>
+    <div class="mt-5 mx-auto" style="width: 700px;">
+        <h3>Submit Project</h3>
 
-<h2>Submit Project</h2>
-<div>Project Name: <br><input type="text" name="name" /></div><br>
-<div>Project Abstract: <br><textarea name="abstract" ></textarea></div><br>
-<div>Authors: <br><input type="text" name="authors" /></div><br>
-<div>Tag(s): <br><input type="text" name="tags" /></div><br>
-</form>
+            <form class="form-row mx-auto">
+                <div class="form-group col-md-10">
+                    <label for="inputFirstName">Project name</label>
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="Enter project name">
+                </div>
+                <div class="form-group col-md-10">
+                    <label for="abstractFormControlTextArea">Project abstract</label>
+                    <textarea class="form-control" id="abstractFormControlTextArea" rows="5"></textarea>
+                </div>
+                <div class="form-group col-md-10">
+                    <label for="authorName">Author(s)</label>
+                    <input type="text" class="form-control" id="authorName" placeholder="Enter author names (separated by comma)">
+                </div>
+                <div class="form-group col-md-10">
+                    <label for="tagProject">Tag(s)</label>
+                    <input type="text" class="form-control" id="tagProject" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)">
+                </div>
+                <div class="form-group col-md-3">
+                    <button type="submit" class="btn btn-primary">Continue</button>
+                </div>
+            </form>
+
+    </div>
+    <ul class="nav navbar-light bg-light justify-content-end mt-5 mx-5">
+        <li class="nav-item">
+         <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer © 2020.</a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link Edconnect disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+        </li> 
+    </ul> 
+       
 </main>
-<input type="submit" />
+ 
 
 </body>
 

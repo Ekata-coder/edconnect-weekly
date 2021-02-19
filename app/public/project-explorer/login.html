@@ -2,36 +2,73 @@
 
 <html>
 
-<body>
-    <header>
-        <h1>Project Explorer</h1>
+    <head>
+
+        <meta charset="utf-8">
     
-        <h2>One Stop Database For Academic Projects</h2>
-    </header>
-        `
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Projects</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="createproject.html">Submit</a>
-    </nav>
+        <title>Index</title>
     
-    <main>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     
-<main>
-   <h1>Login</h1> 
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+     
+        <nav class="navbar navbar-light bg-primary">
+                    <a class="navbar-brand text-light">Project Explorer</a>
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        <button class="btn text-light" type="submit">Submit</button>
+                    </form>
+                </li>
+            </ul>
+                    <form>
+                        <button class="btn text-light" type="submit">Sign up</button>
+                        <button class="btn text-light" type="submit">Login</button>
+                    </form>
+            
+    
+    
+    
+        
+        </nav>
 
-   <form>
-    <div>Email Address: <input type="text" name="email"/></div><br>
+        <main>
 
-    <div>Password: <input type="password" name="password"/></div><br>
+            <div class="mt-5 mx-auto" style="width: 500px;">
+ 
+             <h3>Login</h3> 
 
-    <input type="submit" />
-   </form>
-</main>
+                <form>
+                    <div class="form-group">
+                     <label for="formGroupEmailAddress">Email Address</label>
+                     <input type="text" class="form-control" id="formGroupEmailAddress" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                     <label for="formGroupPassword">Password</label>
+                     <input type="text" class="form-control" id="formGroupPassword" placeholder="Password">
+                    </div>
+                     <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>>
+   
+            <ul class="nav navbar-light bg-light justify-content-end mt-1 mx-5">
+                <li class="nav-item">
+                 <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer © 2020.</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link Edconnect disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+                </li> 
+            </ul>
+        </main>
 
-
-</body>
+    </body>
 
 </html>
