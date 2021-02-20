@@ -46,20 +46,20 @@
 
             <form class="form-row mx-auto">
                 <div class="form-group col-md-10">
-                    <label for="inputFirstName">Project name</label>
-                    <input type="text" class="form-control" id="inputFirstName" placeholder="Enter project name">
+                    <label for="inputProjectName">Project name</label>
+                    <input type="text" class="form-control" id="inputProjectName" placeholder="Enter project name" name="name">
                 </div>
                 <div class="form-group col-md-10">
                     <label for="abstractFormControlTextArea">Project abstract</label>
-                    <textarea class="form-control" id="abstractFormControlTextArea" rows="5"></textarea>
+                    <textarea class="form-control" id="abstractFormControlTextArea" rows="5" name="abstract"></textarea>
                 </div>
                 <div class="form-group col-md-10">
                     <label for="authorName">Author(s)</label>
-                    <input type="text" class="form-control" id="authorName" placeholder="Enter author names (separated by comma)">
+                    <input type="text" class="form-control" id="authorName" placeholder="Enter author names (separated by comma)" name="authors">
                 </div>
                 <div class="form-group col-md-10">
                     <label for="tagProject">Tag(s)</label>
-                    <input type="text" class="form-control" id="tagProject" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)">
+                    <input type="text" class="form-control" id="tagProject" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)" name="tags">
                 </div>
                 <div class="form-group col-md-3">
                     <button type="submit" class="btn btn-primary">Continue</button>
