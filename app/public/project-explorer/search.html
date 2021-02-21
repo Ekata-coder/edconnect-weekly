@@ -43,15 +43,15 @@
             <div class="mt-5 mx-5">
                 <h3>Project Gallery</h3>
             </div>
-            <form>
-                <div class="bg-light p3 mx-5">
+            <div class="bg-light p3 mx-5">
+                <form name="searchForm">
                     <div class="form-row d-flex align-items-center">
                         <div class="form-group col-md-9">
                             <label for="inlineFormInputSearchProject" class="form-label"></label>
-                            <input class="form-control form-control-lg" type="text" id="inlineFormInputSearchProject" placeholder="Search project name, authors, abstract, tags" name="searchTerm">
+                            <input class="form-control form-control-lg" type="text" name="searchTerm" id="inlineFormInputSearchProject" placeholder="Search project name, authors, abstract, tags">
                         </div>
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-lg btn-secondary" name="searchType">Search by</button>
+                            <button type="submit" class="btn btn-lg btn-secondary">Search by</button>
                         </div>
                         <div class="col-auto">
                             <label class="form-label" for="inlineFormName"></label>
@@ -64,8 +64,8 @@
                             <button class="btn btn-lg btn-primary" type="submit">Submit</button>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <div class="container mt-5 mx-5">
             <h4>All project</h4>
